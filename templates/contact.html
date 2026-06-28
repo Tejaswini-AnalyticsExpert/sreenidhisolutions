@@ -1,0 +1,169 @@
+
+{% extends "base.html" %}
+
+{% block title %}
+Contact - SreeNidhi Solutions
+{% endblock %}
+
+{% block content %}
+
+<section class="contact-section">
+
+    <div class="contact-container">
+
+        <!-- LEFT SIDE -->
+
+        <div class="contact-left">
+
+            <span class="contact-badge">
+
+                🚀 Get Started
+
+            </span>
+
+            <h1>
+
+                Request Your
+                <span>Free Solar</span>
+                Consultation
+
+            </h1>
+
+            <p>
+
+                Fill out the form and our solar expert will
+                contact you within 24 hours with a customized
+                proposal for your property.
+
+            </p>
+
+            <div class="contact-list">
+
+                <div>✅ 100% free site inspection and consultation</div>
+
+                <div>✅ Custom solar system design</div>
+
+                <div>✅ Detailed cost & savings analysis</div>
+
+                <div>✅ No obligation – no hidden charges</div>
+
+            </div>
+
+            <div class="contact-info">
+
+                <div class="info-card">
+
+                    <h4>📞 CALL US</h4>
+
+                    <p>+91 9866255666</p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h4>📧 EMAIL US</h4>
+
+                    <p>sreenidhisolutionskkd@gmail.com</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="contact-right">
+
+            <form
+                class="contact-form"
+                method="POST"
+                action="/contact"
+            >
+
+                <h2>Book Free Consultation</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Full Name *"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            name="phone"
+                            placeholder="Phone Number *"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Email Address"
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            name="city"
+                            placeholder="City"
+                        >
+
+                    </div>
+
+                    <div class="form-group full">
+
+                        <input
+                            type="text"
+                            name="service"
+                            value="{{ selected_service }}"
+                            placeholder="Service Type"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group full">
+
+                        <textarea
+                            name="message"
+                            rows="6"
+                            placeholder="Additional Details"
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+                <button type="submit">
+
+                    ➤ Submit Enquiry
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
+```

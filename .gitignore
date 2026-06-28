@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.virtualenvs/
+.venv/
+venv/
+
+# PythonAnywhere
+.cache/
+.ipython/
+.local/
+
+# Database
+*.db
+
+# ZIP files
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db

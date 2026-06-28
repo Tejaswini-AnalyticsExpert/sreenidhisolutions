@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Dashboard - SN Solar{% endblock %}
+
+{% block content %}
+
+<section class="page-banner">
+    <h1>Customer Quote Requests</h1>
+    <p style="text-align:center;">
+        View all submitted enquiries from the website.
+    </p>
+</section>
+
+<section class="content">
+
+    <div style="overflow-x:auto;">
+
+        <table style="width:100%;border-collapse:collapse;background:#fff;box-shadow:0 4px 16px rgba(0,0,0,.08);">
+
+            <thead>
+
+                <tr style="background:#2952cc;color:#fff;">
+
+                    <th style="padding:14px;">ID</th>
+                    <th style="padding:14px;">Name</th>
+                    <th style="padding:14px;">Phone</th>
+                    <th style="padding:14px;">Email</th>
+                    <th style="padding:14px;">Service</th>
+                    <th style="padding:14px;">Message</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                {% for quote in quotes %}
+
+                <tr>
+
+                    <td style="padding:12px;border-bottom:1px solid #eee;">
+                        {{ quote.id }}
+                    </td>
+
+                    <td style="padding:12px;border-bottom:1px solid #eee;">
+                        {{ quote.name }}
+                    </td>
+
+                    <td style="padding:12px;border-bottom:1px solid #eee;">
+                        {{ quote.phone }}
+                    </td>
+
+                    <td style="padding:12px;border-bottom:1px solid #eee;">
+                        {{ quote.email }}
+                    </td>
+
+                    <td style="padding:12px;border-bottom:1px solid #eee;">
+                        {{ quote.service }}
+                    </td>
+
+                    <td style="padding:12px;border-bottom:1px solid #eee;">
+                        {{ quote.message }}
+                    </td>
+
+                </tr>
+
+                {% else %}
+
+                <tr>
+
+                    <td colspan="6" style="padding:20px;text-align:center;">
+                        No quote requests found.
+                    </td>
+
+                </tr>
+
+                {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+{% endblock %}
