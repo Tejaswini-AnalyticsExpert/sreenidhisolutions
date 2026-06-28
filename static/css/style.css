@@ -2440,3 +2440,209 @@ textarea{
     }
 
 }
+/* ==============================
+   CONTACT PAGE - NEW DESIGN
+============================== */
+
+.contact-hero{
+    background:linear-gradient(135deg,#0b4f8a,#1282c2);
+    color:#fff;
+    padding:80px 20px;
+}
+
+.contact-wrapper{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.contact-badge{
+    display:inline-block;
+    background:#ffffff20;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.contact-header h1{
+    font-size:3rem;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.contact-header h1 span{
+    color:#ffd54f;
+}
+
+.contact-header p{
+    font-size:18px;
+    line-height:1.8;
+    opacity:.95;
+}
+
+.contact-buttons{
+    margin-top:30px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.call-btn,
+.whatsapp-btn{
+    padding:14px 28px;
+    border-radius:10px;
+    font-weight:700;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.call-btn{
+    background:#fff;
+    color:#0b4f8a;
+}
+
+.call-btn:hover{
+    transform:translateY(-3px);
+}
+
+.whatsapp-btn{
+    background:#25D366;
+    color:#fff;
+}
+
+.whatsapp-btn:hover{
+    transform:translateY(-3px);
+}
+
+.why-contact-card{
+    background:#fff;
+    color:#222;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.why-contact-card h2{
+    margin-bottom:20px;
+}
+
+.why-contact-card ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.why-contact-card li{
+    padding:12px 0;
+    border-bottom:1px solid #eee;
+}
+
+.service-area{
+    padding:70px 20px;
+    background:#f8fafc;
+    text-align:center;
+}
+
+.service-area h2{
+    color:#0b4f8a;
+    margin-bottom:20px;
+}
+
+.service-cities{
+    font-size:18px;
+    line-height:2;
+}
+
+.city-note{
+    margin-top:20px;
+    color:#555;
+}
+
+.office-section{
+    padding:80px 20px;
+}
+
+.office-card{
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    border-radius:20px;
+    padding:45px;
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+
+.office-card h2{
+    color:#0b4f8a;
+    margin-bottom:25px;
+}
+
+.office-contact{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:35px;
+}
+
+.contact-item{
+    background:#f7f9fc;
+    padding:20px;
+    border-radius:15px;
+}
+
+.contact-item h3{
+    margin-bottom:10px;
+    color:#0b4f8a;
+}
+
+.contact-item a{
+    color:#222;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.cta-section{
+    background:#0b4f8a;
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.cta-section h2{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.cta-section p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+.contact-wrapper{
+    grid-template-columns:1fr;
+}
+
+.contact-header h1{
+    font-size:2.2rem;
+}
+
+.office-contact{
+    grid-template-columns:1fr;
+}
+
+.contact-buttons{
+    flex-direction:column;
+}
+
+.call-btn,
+.whatsapp-btn{
+    text-align:center;
+}
+
+}
