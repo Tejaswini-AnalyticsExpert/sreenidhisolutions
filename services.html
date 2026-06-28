@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sreenidhi Solutions | Solar Panels, Inverters & Batteries</title>
+
+<meta name="description" content="Sreenidhi Solutions provides professional solar panel installation, inverters, UPS systems, batteries, and power backup solutions for homes and businesses.">
+<meta name="keywords" content="Sreenidhi Solutions, Solar Panels, Solar Installation, Inverters, Batteries, UPS, Power Backup">
+<meta name="author" content="Sreenidhi Solutions">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="images/ss-icon.png">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <a href="index.html" class="logo-wrapper">
+            <img src="images/ss-icon.png" alt="Sreenidhi Solutions">
+
+            <div class="brand-text">
+                <h1><span class="blue">SREE</span><span class="green">NIDHI</span></h1>
+
+                <div class="solutions-line">
+                    <span class="line"></span>
+                    <h2>SOLUTIONS</h2>
+                    <span class="line"></span>
+                </div>
+
+                <p>POWERING HOMES. POWERING TOMORROWS.</p>
+            </div>
+        </a>
+    </div>
+
+    <button class="hamburger" id="hamburger">☰</button>
+
+    <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#process">Process</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <li class="mobile-btn">
+            <a href="contact.html" class="quote-btn">Get a Free Consultation</a>
+        </li>
+    </ul>
+</nav>
+
+<section class="page-banner">
+    <h1>Our Solar Services</h1>
+    <p style="text-align:center;">
+        Reliable, efficient and affordable solar solutions tailored to your needs.
+    </p>
+</section>
+
+<section class="services">
+
+    <div class="service-container">
+
+        <div class="card">
+            <h3>🏠 Residential Solar</h3>
+            <p>Complete rooftop solar systems for homes with subsidy assistance.</p>
+            <br>
+            <a href="contact.html?service=Residential Solar">
+                <button>Get Quote</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>🏢 Commercial Solar</h3>
+            <p>Reduce electricity bills for offices, schools and commercial spaces.</p>
+            <br>
+            <a href="contact.html?service=Commercial Solar">
+                <button>Get Quote</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>🏭 Industrial Solar</h3>
+            <p>High-capacity systems for factories and manufacturing units.</p>
+            <br>
+            <a href="contact.html?service=Industrial Solar">
+                <button>Get Quote</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>🏘️ Housing Society Solar</h3>
+            <p>Shared solar solutions for apartments and gated communities.</p>
+            <br>
+            <a href="contact.html?service=Housing Society Solar">
+                <button>Get Quote</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>🔋 Battery Storage</h3>
+            <p>Store excess energy and use it during outages or peak hours.</p>
+            <br>
+            <a href="contact.html?service=Battery Storage">
+                <button>Get Quote</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>⚡ On-Grid & Off-Grid</h3>
+            <p>Custom on-grid and off-grid installations for every requirement.</p>
+            <br>
+            <a href="contact.html?service=On-Grid / Off-Grid Solar">
+                <button>Get Quote</button>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="cta" style="text-align:center;">
+
+    <h2>Need Help Choosing the Right Solution?</h2>
+
+    <p>Talk to our experts for a free consultation.</p>
+
+    <a href="contact.html">
+        <button>Contact Us</button>
+    </a>
+
+</section>
+
+
+
+<footer class="footer">
+    <div class="footer-bottom">
+        &copy; 2026 Sreenidhi Solutions. All Rights Reserved.
+    </div>
+</footer>
+
+<a href="https://wa.me/919866255666" class="whatsapp-float" target="_blank">💬</a>
+
+<button id="topBtn" onclick="topFunction()">↑</button>
+
+<script>
+window.onscroll=function(){
+const btn=document.getElementById("topBtn");
+btn.style.display=document.documentElement.scrollTop>300?"block":"none";
+};
+
+function topFunction(){
+window.scrollTo({top:0,behavior:"smooth"});
+}
+
+const hamburger=document.getElementById("hamburger");
+const navLinks=document.getElementById("nav-links");
+
+hamburger.addEventListener("click",function(){
+navLinks.classList.toggle("active");
+hamburger.innerHTML=navLinks.classList.contains("active")?"✕":"☰";
+});
+
+document.querySelectorAll("#nav-links a").forEach(link=>{
+link.addEventListener("click",function(){
+navLinks.classList.remove("active");
+hamburger.innerHTML="☰";
+});
+});
+</script>
+
+</body>
+</html>
