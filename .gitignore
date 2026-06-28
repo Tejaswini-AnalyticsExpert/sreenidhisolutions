@@ -1,23 +1,25 @@
-# Python cache
+# PythonAnywhere
+.bashrc
+.gitconfig
+.profile
+.pythonstartup.py
+.vimrc
+.cache/
+.local/
+.ipython/
+
+# Python
 __pycache__/
 *.pyc
-
-# Virtual environments
-.virtualenvs/
-.venv/
-venv/
-
-# PythonAnywhere
-.cache/
-.ipython/
-.local/
-
-# Database
+*.pyo
 *.db
-
-# ZIP files
 *.zip
 
-# OS files
+# Virtual Environments
+.virtualenvs/
+venv/
+.venv/
+
+# OS
 .DS_Store
 Thumbs.db
