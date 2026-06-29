@@ -2,27 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://sreenidhisolutions.pythonanywhere.com/</loc>
+    <loc>https://sreenidhisolutions.in/</loc>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://sreenidhisolutions.pythonanywhere.com/about</loc>
+    <loc>https://sreenidhisolutions.in/about.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://sreenidhisolutions.pythonanywhere.com/services</loc>
+    <loc>https://sreenidhisolutions.in/services.html</loc>
     <priority>0.8</priority>
   </url>
 
-  <url>
-    <loc>https://sreenidhisolutions.pythonanywhere.com/projects</loc>
-    <priority>0.8</priority>
-  </url>
 
   <url>
-    <loc>https://sreenidhisolutions.pythonanywhere.com/contact</loc>
+    <loc>https://sreenidhisolutions.in/contact.html</loc>
     <priority>0.8</priority>
   </url>
 
