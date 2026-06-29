@@ -50,57 +50,7 @@
     </ul>
 </nav>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sreenidhi Solutions | Solar Panels, Inverters & Batteries</title>
 
-<meta name="description" content="Sreenidhi Solutions provides professional solar panel installation, inverters, UPS systems, batteries, and power backup solutions for homes and businesses.">
-<meta name="keywords" content="Sreenidhi Solutions, Solar Panels, Solar Installation, Inverters, Batteries, UPS, Power Backup">
-<meta name="author" content="Sreenidhi Solutions">
-
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" href="images/ss-icon.png">
-</head>
-
-<body>
-
-<nav>
-    <div class="logo">
-        <a href="index.html" class="logo-wrapper">
-            <img src="images/ss-icon.png" alt="Sreenidhi Solutions">
-
-            <div class="brand-text">
-                <h1><span class="blue">SREE</span><span class="green">NIDHI</span></h1>
-
-                <div class="solutions-line">
-                    <span class="line"></span>
-                    <h2>SOLUTIONS</h2>
-                    <span class="line"></span>
-                </div>
-
-                <p>POWERING HOMES. POWERING TOMORROWS.</p>
-            </div>
-        </a>
-    </div>
-
-    <button class="hamburger" id="hamburger">☰</button>
-
-    <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#services">Services</a></li>
-        <li><a href="index.html#process">Process</a></li>
-        <li><a href="index.html#pricing">Pricing</a></li>
-        <li><a href="contact.html">Contact</a></li>
-
-        <li class="mobile-btn">
-            <a href="contact.html" class="quote-btn">Get a Free Consultation</a>
-        </li>
-    </ul>
-</nav>
 
 <!-- ========================= -->
 <!-- PAGE BANNER -->
@@ -353,41 +303,3 @@ hamburger.innerHTML="☰";
 </html>
 
 
-<footer class="footer">
-    <div class="footer-bottom">
-        &copy; 2026 Sreenidhi Solutions. All Rights Reserved.
-    </div>
-</footer>
-
-<a href="https://wa.me/919866255666" class="whatsapp-float" target="_blank">💬</a>
-
-<button id="topBtn" onclick="topFunction()">↑</button>
-
-<script>
-window.onscroll=function(){
-const btn=document.getElementById("topBtn");
-btn.style.display=document.documentElement.scrollTop>300?"block":"none";
-};
-
-function topFunction(){
-window.scrollTo({top:0,behavior:"smooth"});
-}
-
-const hamburger=document.getElementById("hamburger");
-const navLinks=document.getElementById("nav-links");
-
-hamburger.addEventListener("click",function(){
-navLinks.classList.toggle("active");
-hamburger.innerHTML=navLinks.classList.contains("active")?"✕":"☰";
-});
-
-document.querySelectorAll("#nav-links a").forEach(link=>{
-link.addEventListener("click",function(){
-navLinks.classList.remove("active");
-hamburger.innerHTML="☰";
-});
-});
-</script>
-
-</body>
-</html>
